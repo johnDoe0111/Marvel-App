@@ -1,0 +1,120 @@
+.map-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 23px;
+  width: 675px;
+}
+
+.cards-wrapper {
+  display: flex;
+}
+
+.absence-cards {
+  padding-top: 15px;
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card {
+  background-color: #232222;
+  width: 200px;
+  height: 318px;
+  cursor: pointer;
+  margin-top: 30px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+}
+
+.card:not(:first-child) {
+  margin-left: 25px;
+}
+
+.card:nth-child(4) {
+  margin-left: 0;
+}
+
+.card:nth-child(7) {
+  margin-left: 0;
+}
+
+.card:nth-child(10) {
+  margin-left: 0;
+}
+
+.card:nth-child(13) {
+  margin-left: 0;
+}
+
+.character-name {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+  padding: 15px 15px 0 15px;
+}
+
+.load-btn {
+  margin: 45px 0;
+  color: white;
+  text-transform: uppercase;
+  width: 170px;
+  height: 38px;
+  border: none;
+  background: linear-gradient(135deg, transparent 8px, #9f0013 0) top left,
+    linear-gradient(-45deg, transparent 8px, #9f0013 0) bottom right;
+  background-size: 52%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.load-more-btn-block {
+  display: flex;
+  justify-content: center;
+  width: 650px;
+}
+
+.fixed-img {
+  position: absolute;
+  bottom: 0px;
+  right: -200px;
+}
+
+.click-card {
+  filter: drop-shadow(0px 5px 20px #9f0013);
+  transition: 0.25s;
+  margin-top: 20px;
+  background-color: #232222;
+  width: 200px;
+  height: 318px;
+  cursor: pointer;
+}
+
+.click-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.click-card:not(:first-child) {
+  margin-left: 25px;
+}
+
+.click-card:nth-child(4) {
+  margin-left: 0;
+}
+
+.click-card:nth-child(7) {
+  margin-left: 0;
+}
+
+.click-card:nth-child(10) {
+  margin-left: 0;
+}
+
+.click-card:nth-child(13) {
+  margin-left: 0;
+}

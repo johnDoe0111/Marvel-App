@@ -1,0 +1,34 @@
+.comics-nav {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comics-links {
+  display: flex;
+}
+
+.comics-nav-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+}
+
+.comics-nav-title span {
+  color: #9f0013;
+}
+
+.second-link {
+  text-decoration: none;
+  color: black;
+}
+
+.second-link:not(:first-child) {
+  padding-left: 8px;
+  color: red;
+}
+
+.comics-wrapper {
+  padding-top: 50px;
+}

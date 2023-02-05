@@ -1,0 +1,42 @@
+.none {
+  display: none;
+}
+
+.first-wrapper {
+  display: flex;
+  width: 693px;
+}
+
+.comics-info {
+  padding-left: 50px;
+}
+
+.comics-info-title {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.comics-block {
+  margin-top: 50px;
+}
+
+.comics-info-pages {
+  margin-top: 25px;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+}
+
+.comics-info-lang {
+  margin-top: 25px;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+}
+
+.comics-info-price {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 24px;
+  color: #9f0013;
+  margin-top: 25px;
+}
