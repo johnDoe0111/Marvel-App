@@ -4,13 +4,13 @@ import "../styles/characters.css";
 import { Link } from "react-router-dom";
 import Decoration from "../images/Decoration.png";
 import CharacterCard from "../components/CharacterCard";
+import { baseUrl } from "../constants";
 
 const Characters = () => {
   const [info, setInfo] = useState("");
   const [random, setRandom] = useState("");
   const dispatch = useDispatch();
-  const url =
-    "https://gateway.marvel.com:443/v1/public/characters?limit=15&apikey=51f502f53348b5a218887333707c8a5b";
+  const url = `${baseUrl}/characters?limit=15&apikey=51f502f53348b5a218887333707c8a5b`;
   const fetchApi = async () => {
     const res = await fetch(url);
     const resApi = await res.json();
@@ -36,21 +36,6 @@ const Characters = () => {
   }
   return (
     <div>
-      <div className="header-nav">
-        <p className="header-nav-title">
-          <span>Marvel</span> information portal
-        </p>
-        <div className="header-links">
-          <Link className="link" to="/">
-            <h2>
-              Characters <span>/</span>
-            </h2>
-          </Link>
-          <Link className="link" to="/comics">
-            <h2>Comics</h2>
-          </Link>
-        </div>
-      </div>
       <div className="random-character">
         <div className="random-first-block">
           <div className="random-first-block-img">

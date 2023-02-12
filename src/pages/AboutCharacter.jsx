@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
 import "../styles/about-character.css";
 import Avengers from "../images/Avengers.png";
 import AvengersLogo from "../images/Avengers-logo.png";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { baseUrl } from "../constants";
 
 const AboutCharacters = () => {
   const dispatch = useDispatch();
   const aboutCharacters = window.location.pathname;
-  const url = `https://gateway.marvel.com:443/v1/public${aboutCharacters}?apikey=51f502f53348b5a218887333707c8a5b`;
+  const url = `${baseUrl}${aboutCharacters}?apikey=51f502f53348b5a218887333707c8a5b`;
   const characterInfo = useSelector((state) => state.characterInfo);
   const fetchApi = async () => {
     const response = await fetch(url);
@@ -28,21 +28,6 @@ const AboutCharacters = () => {
   }
   return (
     <>
-      <div className="header-nav">
-        <p className="header-nav-title">
-          <span>Marvel</span> information portal
-        </p>
-        <div className="header-links">
-          <Link className="about-link" to="/">
-            <h2>
-              Characters <span>/</span>
-            </h2>
-          </Link>
-          <Link className="about-link" to="/comics">
-            <h2>Comics</h2>
-          </Link>
-        </div>
-      </div>
       <div className="about-block">
         <div className="about-first-block">
           <img src={Avengers} alt="error" />
