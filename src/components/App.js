@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 
 const navLinks = [
-  { to: 'Marvel-App', name: 'Characters'},
+  { to: '/Marvel-App', name: 'Characters'},
   { to: '/comics', name: 'Comics'},
 ]
 
@@ -29,7 +29,7 @@ function App() {
         </div>
       </div>
       <Routes>
-        <Route path="Marvel-App" element={<Characters />} />
+        <Route path="/Marvel-App" element={<Characters />} />
         <Route path="/comics" element={<Comics />} />
         <Route path="/characters/:id" element={<AboutCharacters />} />
         <Route path="/comics/:id" element={<AboutComics />} />
