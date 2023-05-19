@@ -29,7 +29,7 @@ function App() {
         </div>
       </div>
       <Routes>
-        <Route path="/" element={<Characters />} />
+        <Route path="Marvel-App" element={<Characters />} />
         <Route path="/comics" element={<Comics />} />
         <Route path="/characters/:id" element={<AboutCharacters />} />
         <Route path="/comics/:id" element={<AboutComics />} />
